@@ -15,7 +15,7 @@ const notifier = opt=>{
     setTimeout(()=>$(msg).addClass('slide-from-right'), 100);
 }
 
-const _e = async handler => {
+const _e = async handler=>{
     try {
         $('body').addClass('loading');
         await handler();
